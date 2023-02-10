@@ -10,7 +10,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class WhatsappMessageReader implements InterfaceMessageReader {
+/**
+ * WhatsUpMessageReader implements InterfaceMessageReader.
+ * */
+
+public class WhatsUpMessageReader implements InterfaceMessageReader {
+
+    /**
+     * @param inputStream - is a source for reading data. A stream
+     * can represent various kinds of sources, including disk files,
+     * devices, other programs, and memory arrays.
+     * */
 
     @Override
     public List<Message> readFile(InputStream inputStream) throws FileNotFoundException {
@@ -73,11 +83,10 @@ public class WhatsappMessageReader implements InterfaceMessageReader {
         File file = new File("test.txt");
 
         //created object
-        WhatsappMessageReader whatsappMessageReader = new WhatsappMessageReader();
+        WhatsUpMessageReader whatsUpMessageReader = new WhatsUpMessageReader();
         //returns a list of messages
-        List<Message> messages = whatsappMessageReader.readFile(new FileInputStream(file) {});
+        List<Message> messages = whatsUpMessageReader.readFile(new FileInputStream(file) {});
         //return a list of users
-        List<String> users = whatsappMessageReader.readFile(new FileInputStream(file) {});
 
         //iter - shortcut for foreach loop creation
         for (Message message : messages) {

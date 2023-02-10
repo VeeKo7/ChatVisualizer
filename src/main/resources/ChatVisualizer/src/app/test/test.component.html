@@ -1,0 +1,12 @@
+<h2>{{optionSelected}}</h2>
+
+<select #mySelect (change)="onSelect(mySelect.value)" class="form-select" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<input type="text" name="textName" id="textId" class="form-control" #myText (change)="inputChange(myText.id)"value="valuePOP"/>
+
+

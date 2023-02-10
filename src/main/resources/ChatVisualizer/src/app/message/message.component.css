@@ -1,0 +1,20 @@
+.default-message {
+  font-size: 14.2pt;
+  /*font-family: "Segoe UI";*/
+  color: #111B21;
+}
+
+.message {
+  padding: 6px 7px 8px 9px;
+  background-color: white;
+}
+
+.secondary-message {
+  background-color: #d9fdd3;
+}
+
+.time {
+  font-size: 11px;
+  line-height: 15px;
+  color: #667781;
+}
